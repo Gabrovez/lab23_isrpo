@@ -25,3 +25,9 @@ form.addEventListener('submit', function(e) {
 
     clearBtn.style.display = 'inline-block';
 });
+
+clearBtn.addEventListener('click', function() {
+    form.reset();
+    resultDiv.innerHTML = '';
+    clearBtn.style.display = 'none';
+});
