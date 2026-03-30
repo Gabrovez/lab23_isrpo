@@ -30,4 +30,4 @@ clearBtn.addEventListener('click', function() {
     form.reset();
     resultDiv.innerHTML = '';
     clearBtn.style.display = 'none';
-});
+}); 
