@@ -15,4 +15,13 @@ form.addEventListener('submit', function(e) {
         alert('Пожалуйста, заполните все поля');
         return;
     }
+
+    resultDiv.innerHTML = `
+        <strong>Имя:</strong> ${name}<br>
+        <strong>Возраст:</strong> ${age}<br>
+        <strong>Город:</strong> ${city}<br>
+        <strong>Хобби:</strong> ${hobby}
+    `;
+
+    clearBtn.style.display = 'inline-block';
 });
